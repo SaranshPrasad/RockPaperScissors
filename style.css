@@ -1,0 +1,124 @@
+*{
+    margin: 0;;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+body{
+
+    background:
+    radial-gradient(circle, transparent 20%, slategray 20%, slategray 80%, transparent 80%, transparent),
+    radial-gradient(circle, transparent 20%, slategray 20%, slategray 80%, transparent 80%, transparent) 50px 50px,
+    linear-gradient(#A8B1BB 8px, transparent 8px) 0 -4px,
+    linear-gradient(90deg, #A8B1BB 8px, transparent 8px) -4px 0;
+    background-color: slategray;
+    background-size:100px 100px, 100px 100px, 50px 50px, 50px 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#title{
+    margin-top: 5rem;
+    font-size: 3rem;
+   
+}
+.choice {
+    
+        height: 150px;
+        width: 155px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.choice > img{
+    width: 140px;
+    height: 140px;
+    padding: 0 5px;
+    object-fit: inherit;
+    border-radius: 50%;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 3rem;
+    
+}
+.choice:hover{
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.score-board{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+#user-name , #comp{
+ margin-top: 2rem;
+ font-family: 'Shizuru', sans-serif;
+ font-size: 2rem;
+}
+#userScore , #compScore{
+    font-size: 5rem;
+    font-family: 'Shizuru', sans-serif;
+}
+
+.msg-container{
+    margin-top: 3rem;
+}
+
+#msg{
+    background: #d186c6;
+    color: rgb(0, 0, 0);
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+}
+
+@media (max-width : 600px) {
+    body{
+        width: 100%;
+        max-width: 100%;
+        height: 70vh;
+    }
+    #title{
+        font-size: 2em;
+        margin-top: 2rem;
+    }
+    .choices{
+        width: 100%;
+        max-width: 100%;
+        gap: 0px;
+    }
+    .choice{
+        width: 130px;
+        height: 130px;
+    }
+    .choice > img{
+        width: 100px;
+        height: 100px;
+    }
+    .msg-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        margin:auto;
+        margin-top: 40px;
+    }
+}
+
+#copyRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
