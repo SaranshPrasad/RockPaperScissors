@@ -113,6 +113,14 @@ body{
         margin:auto;
         margin-top: 40px;
     }
+    #overlay{
+        width: 50%;
+        height: 50%;
+    }
+    #prompt-box{
+        width: 80%;
+        
+    }
 }
 
 #copyRight{
@@ -122,3 +130,40 @@ body{
     font-size: 1.2rem;
     margin-top: 2rem;
 }
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  #prompt-box {
+    background: #aad9b3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px#0e045f;
+    font-family: 'Poppins';
+  }
+
+  #prompt-box input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 3rem;
+    box-shadow: 5px 5px 10px#d186c6;
+  }
+
+  #prompt-box button {
+    background: #3498db;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }

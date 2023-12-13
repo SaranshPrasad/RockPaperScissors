@@ -1,7 +1,19 @@
-const userName = prompt("Enter Your Name : ");
+
 
 const usName = document.querySelector("#user-name");
-usName.innerHTML = userName ;
+
+window.onload = function() {
+  openPrompt();
+};
+
+function submitPrompt() {
+  var userInput = document.getElementById('custom-input').value;
+  document.getElementById('overlay').style.display = 'none';
+  usName.innerHTML = userInput ;
+}
+function openPrompt() {
+  document.getElementById('overlay').style.display = 'flex';
+}
 let userScore = 0;
 let compScore = 0;
 const userScorePara = document.querySelector("#userScore");
